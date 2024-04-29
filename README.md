@@ -4,8 +4,9 @@
 
 O Sistema de Gestão de Biblioteca é uma aplicação desenvolvida para facilitar a gestão do acervo de uma biblioteca, incluindo operações como empréstimos, devoluções, reservas, etc.
 
-## Participantes
+## Participantes do Projeto
 
-- Desenvolvedores de Software
-- Especialistas em Biblioteconomia
-- Administradores de Sistema
+- Lourenço Correia
+- João Montalvão
+- Rodrigo Pereira
+- Diogo Piçarra
