@@ -19,3 +19,12 @@ Características do produto/Lista de Funcionalidades​:
 - Gestão de Multas;
 
 
+Restrições do produto - características que levam o sistema a não funcionar
+- Conexão à Internet: Dependência de uma conexão estável.
+- Hardware e Infraestrutura: Necessidade de equipamentos adequados.
+- Manutenção Regular: Requer atualizações e backups regulares.
+- Compatibilidade de Navegadores: Funcionamento variável em diferentes navegadores.
+- Segurança da Informação: Risco de violações sem medidas adequadas.
+- Capacidade de Escalabilidade: Desafios de desempenho em crescimento.
+- Integração com Outros Sistemas: Necessidade de integração eficiente.
+- Conformidade Legal e Regulamentar: Obrigação de cumprir legislação e normas.
