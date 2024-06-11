@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systmlib Library Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BiblioSystem</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#buy-books">Books to Buy</a></li>
+                <li><a href="#loan-books">Loan a Book</a></li>
+                <li><a href="#book-stock">Book Stock</a></li>
+                <li><a href="#manage-loans">Manage Loans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to BiblioSystem</h2>
+            <p>Manage all your library needs in one place.</p>
+            <img src="library.jpg" alt="Library Image">
+        </section>
+
+        <section id="buy-books">
+            <h2>Books to Buy</h2>
+            <p>List of books available for purchase:</p>
+            <ul>
+                <li>Book 1</li>
+                <li>Book 2</li>
+                <li>Book 3</li>
+            </ul>
+        </section>
+
+        <section id="loan-books">
+            <h2>Loan a Book</h2>
+            <p>Manage your book loans:</p>
+            <form>
+                <label for="book-title">Book Title:</label>
+                <input type="text" id="book-title" name="book-title" required>
+                <label for="loan-date">Loan Date:</label>
+                <input type="date" id="loan-date" name="loan-date" required>
+                <button type="submit">Loan Book</button>
+            </form>
+        </section>
+
+        <section id="book-stock">
+            <h2>Book Stock</h2>
+            <p>Current book inventory:</p>
+            <ul>
+                <li>Book 1 - 10 copies</li>
+                <li>Book 2 - 5 copies</li>
+                <li>Book 3 - 2 copies</li>
+            </ul>
+        </section>
+
+        <section id="manage-loans">
+            <h2>Manage Loans</h2>
+            <p>Check the status of book loans:</p>
+            <ul>
+                <li>Book 1 - Loaned to User A - Returned</li>
+                <li>Book 2 - Loaned to User B - Not Returned</li>
+                <li>Book 3 - Loaned to User C - Returned</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Systmlib Library Management</p>
+    </footer>
+</body>
+</html>
