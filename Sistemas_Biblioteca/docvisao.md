@@ -33,6 +33,7 @@ Equipa do Projeto/Desenvolvimento:
 Características do produto/Lista de Funcionalidades​:
 
 -> Funcionalidades do Portal do Utilizador:
+
     . Registo e login de utilizadores.
     
     . Pesquisa e navegação no catálogo de livros.
@@ -44,21 +45,6 @@ Características do produto/Lista de Funcionalidades​:
     . Acompanhamento do estado de pedidos e empréstimos.
     
     . Visualização do histórico de empréstimos.
-
--> Funcionalidades do Portal do Administrador:
-
-    . Registo e login de administradores.
-    
-    . Gestão de stock (quantidade de livros disponíveis).
-    
-    . Processamento de pedidos de empréstimo.
-    
-    . Registo de empréstimos, renovações e devoluções.
-    
-    . Geração de relatórios sobre vendas, empréstimos e stock.
-    
-    . Notificações e alertas sobre devoluções pendentes.
-
 
 Restrições do produto
 
