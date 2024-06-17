@@ -70,7 +70,7 @@ Restrições do produto
 
     . Tempo de resposta aceitável para operações comuns (pesquisa, compra, empréstimo).
     
-    . Sistema deve ser escalável para suportar picos de uso, como durante promoções especiais.
+    . Sistema deve ser escalável para suportar picos de uso.
 
 -> Restrições de Usabilidade:
 
