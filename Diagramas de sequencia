@@ -1,1 +1,82 @@
+Diagrama de Sequência: Criação de Conta de Utilizador
+actor Utilizador
+participant Sistema
+participant "Base de Dados" as BD
+
+Utilizador -> Sistema: criarConta()
+activate Sistema
+Sistema -> BD: validarDados()
+activate BD
+BD --> Sistema: dadosValidos()
+Sistema -> BD: inserirDados()
+BD --> Sistema: confirmacao()
+Sistema -> Utilizador: contaCriada()
+deactivate BD
+deactivate Sistema
+
+
+Diagrama de Sequência: Login de Utilizador
+actor Utilizador
+participant Sistema
+participant "Base de Dados" as BD
+
+Utilizador -> Sistema: fazerLogin()
+activate Sistema
+Sistema -> BD: validarLogin()
+activate BD
+BD --> Sistema: verificarDados()
+Sistema --> Utilizador: loginValido()
+deactivate BD
+deactivate Sistema
+
+
+Diagrama de Sequência: Pesquisa de Livros
+actor Utilizador
+participant Sistema
+participant "Base de Dados" as BD
+
+Utilizador -> Sistema: pesquisarLivro(titulo)
+activate Sistema
+Sistema -> BD: buscarLivro(titulo)
+activate BD
+BD --> Sistema: resultados()
+Sistema --> Utilizador: mostrarResultados(resultados)
+deactivate BD
+deactivate Sistema
+
+
+Diagrama de Sequência: Adicionar Livro (Administrador)
+actor Administrador
+participant Sistema
+participant "Base de Dados" as BD
+
+Administrador -> Sistema: adicionarLivro()
+activate Sistema
+Sistema -> BD: validarDados()
+activate BD
+BD --> Sistema: dadosValidos()
+Sistema -> BD: inserirDados()
+BD --> Sistema: confirmacao()
+Sistema --> Administrador: livroAdicionado()
+deactivate BD
+deactivate Sistema
+
+
+Diagrama de Sequência: Remover Livro (Administrador)
+actor Administrador
+participant Sistema
+participant "Base de Dados" as BD
+
+Administrador -> Sistema: removerLivro(ISBN)
+activate Sistema
+Sistema -> BD: verificarLivro(ISBN)
+activate BD
+BD --> Sistema: livroEncontrado()
+Sistema -> BD: excluirLivro(ISBN)
+BD --> Sistema: confirmacao()
+Sistema --> Administrador: livroRemovido()
+deactivate BD
+deactivate Sistema
+
+
 
