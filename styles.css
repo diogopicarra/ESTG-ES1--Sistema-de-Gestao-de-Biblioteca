@@ -5,9 +5,9 @@ body {
     background: url('library-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
-}
-
-header {
+    }
+    
+    header {
     background-color: rgba(76, 175, 80, 0.9);
     color: white;
     padding: 1em 0;
@@ -16,34 +16,34 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-}
-
-header h1 {
+    }
+    
+    header h1 {
     margin: 0;
-}
-
-main {
+    }
+    
+    main {
     padding: 5em 2em 2em;
-}
-
-section {
+    }
+    
+    section {
     display: none;
     text-align: center;
-}
-
-section.active {
+    }
+    
+    section.active {
     display: block;
-}
-
-.login-container, .search-container {
+    }
+    
+    .login-container, .search-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-}
-
-.login-content, .search-content {
+    }
+    
+    .login-content, .search-content {
     background: white;
     padding: 2em;
     border-radius: 8px;
@@ -51,34 +51,34 @@ section.active {
     text-align: left;
     max-width: 400px;
     width: 100%;
-}
-
-.login-content h2, .search-content h2 {
+    }
+    
+    .login-content h2, .search-content h2 {
     margin-top: 0;
-}
-
-.login-content p {
+    }
+    
+    .login-content p {
     margin-bottom: 1em;
-}
-
-.login-content form, .search-content form {
+    }
+    
+    .login-content form, .search-content form {
     display: flex;
     flex-direction: column;
-}
-
-.login-content form label, .search-content form label {
+    }
+    
+    .login-content form label, .search-content form label {
     margin: 0.5em 0 0.2em;
     color: #4caf50;
-}
-
-.login-content form input, .search-content form input {
+    }
+    
+    .login-content form input, .search-content form input {
     padding: 0.7em;
     margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.login-content form button, .search-content form button {
+    }
+    
+    .login-content form button, .search-content form button {
     padding: 0.7em;
     background-color: #4caf50;
     color: white;
@@ -86,13 +86,15 @@ section.active {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.login-content form button:hover, .search-content form button:hover {
+    }
+    
+    .login-content form button
+    , .search-content form button
+    {
     background-color: #45a049;
-}
-
-.white-bar {
+    }
+    
+    .white-bar {
     background: white;
     width: 100%;
     text-align: center;
@@ -100,9 +102,9 @@ section.active {
     position: fixed;
     top: 64px;
     z-index: 1000;
-}
-
-nav ul {
+    }
+    
+    nav ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -110,13 +112,13 @@ nav ul {
     background-color: #333;
     margin: 0;
     flex-wrap: wrap;
-}
-
-nav ul li {
+    }
+    
+    nav ul li {
     margin: 0.5em;
-}
-
-nav ul li a {
+    }
+    
+    nav ul li a {
     color: white;
     text-decoration: none;
     padding: 0.5em 1em;
@@ -124,51 +126,52 @@ nav ul li a {
     background-color: #4caf50;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
+    }
+    
+    nav ul li a
+    {
     background-color: #45a049;
-}
-
-.content-section {
+    }
+    
+    .content-section {
     display: none;
     margin: 2em 0;
     padding: 1em;
     border-radius: 8px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.content-section.active {
+    }
+    
+    .content-section.active {
     display: block;
-}
-
-section h2 {
+    }
+    
+    section h2 {
     border-bottom: 2px solid #4caf50;
     padding-bottom: 0.5em;
     color: #4caf50;
-}
-
-form {
+    }
+    
+    form {
     display: flex;
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto;
-}
-
-form label {
+    }
+    
+    form label {
     margin: 0.5em 0 0.2em;
     color: #4caf50;
-}
-
-form input {
+    }
+    
+    form input {
     padding: 0.5em;
     margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-form button {
+    }
+    
+    form button {
     padding: 0.7em;
     background-color: #4caf50;
     color: white;
@@ -176,13 +179,14 @@ form button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-form button:hover {
+    }
+    
+    form button
+    {
     background-color: #45a049;
-}
-
-footer {
+    }
+    
+    footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -191,42 +195,45 @@ footer {
     bottom: 0;
     width: 100%;
     z-index: 1000;
-}
-
-img {
+    }
+    
+    img {
     width: 100%;
     max-width: 600px;
     display: block;
     margin: 1em auto;
     border-radius: 8px;
-}
-
-/* Cleaner design for the dashboard */
-#dashboard-page {
+    }
+    
+    /* Cleaner design for the dashboard */
+    #dashboard-page {
     background: #f9f9f9;
     padding: 2em;
-}
-
-nav ul {
-    background-color: #4caf50;
-}
-
-nav ul li a {
-    background-color: #333;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
     }
-
+    
+    nav ul {
+    background-color: #4caf50;
+    }
+    
+    nav ul li a {
+    background-color: #333;
+    }
+    
+    nav ul li a
+    {
+    background-color: #555;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    css
+    Copiar código
     nav ul li {
         margin: 0.5em 0;
     }
-}
+    }
