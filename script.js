@@ -1,6 +1,6 @@
-// Função para criar um novo usuário e armazenar no localStorage
+// Função para criar um novo utilizador e armazenar no localStorage
 function createUser(username, password) {
-    // Verifica se o usuário já existe
+    // Verifica se o utilizador já existe
     const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
     const existingUser = existingUsers.find(user => user.username === username);
     if (existingUser) {
