@@ -1,19 +1,65 @@
+// Função para criar um novo usuário e armazenar no localStorage
+function createUser(username, password) {
+    // Verifica se o usuário já existe
+    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+    const existingUser = existingUsers.find(user => user.username === username);
+    if (existingUser) {
+        return false; // Usuário já existe
+    } else {
+        existingUsers.push({ username, password });
+        localStorage.setItem('users', JSON.stringify(existingUsers));
+        return true; // Conta criada com sucesso
+    }
+}
+
+// Função para verificar se as credenciais de login são válidas
+function loginUser(username, password) {
+    // Verifica se as credenciais são válidas
+    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+    const validUser = existingUsers.find(user => user.username === username && user.password === password);
+    return validUser ? true : false;
+}
+
+// Event listener para o formulário de criar conta
+document.getElementById('signup-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const signupUsername = document.getElementById('signup-username').value;
+    const signupPassword = document.getElementById('signup-password').value;
+
+    // Cria a conta
+    const accountCreated = createUser(signupUsername, signupPassword);
+
+    if (accountCreated) {
+        alert('Account created successfully! Please log in.');
+    } else {
+        alert('Username already exists. Please choose a different username.');
+    }
+
+    // Limpa os campos após o envio
+    this.reset();
+});
+
+// Event listener para o formulário de login
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    // Valid credentials for demonstration
-    const validUsername = 'lourenco';
-    const validPassword = '12345';
+    // Verifica se as credenciais são válidas
+    const validLogin = loginUser(username, password);
 
-    if (username === validUsername && password === validPassword) {
+    if (validLogin) {
+        alert('Login successful!');
         document.getElementById('login-page').classList.remove('active');
         document.getElementById('search-page').classList.add('active');
     } else {
         alert('Invalid username or password');
     }
+
+    // Limpa os campos após o envio
+    this.reset();
 });
 
 document.getElementById('search-form').addEventListener('submit', function(event) {
