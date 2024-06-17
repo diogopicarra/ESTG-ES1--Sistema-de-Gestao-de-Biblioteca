@@ -24,20 +24,15 @@ Características do produto/Lista de Funcionalidades​:
 -> Funcionalidades do Portal do Utilizador:
     . Registo e login de utilizadores.
     . Pesquisa e navegação no catálogo de livros.
-    . Visualização de detalhes do livro (autor, sinopse, preço, disponibilidade).
-    . Adição de livros ao carrinho de compras.
-    . Realização de compras online (integração com sistemas de pagamento).
+    . Visualização de detalhes do livro (preço, disponibilidade).
     . Pedido de empréstimos de livros disponíveis.
-    . Visualização de promoções e ofertas.
     . Acompanhamento do estado de pedidos e empréstimos.
-    . Visualização do histórico de compras e empréstimos.
+    . Visualização do histórico de empréstimos.
 
 -> Funcionalidades do Portal do Administrador:
     . Registo e login de administradores.
-    . Gestão do catálogo de livros (adicionar, remover, atualizar informações de livros).
     . Gestão de stock (quantidade de livros disponíveis).
-    . Criação e gestão de promoções e ofertas.
-    . Processamento de pedidos de compra e empréstimo.
+    . Processamento de pedidos de empréstimo.
     . Registo de empréstimos, renovações e devoluções.
     . Geração de relatórios sobre vendas, empréstimos e stock.
     . Notificações e alertas sobre devoluções pendentes.
