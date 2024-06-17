@@ -16,8 +16,21 @@
             <div class="login-container">
                 <div class="login-content">
                     <h2>Welcome to BiblioSystem</h2>
-                    <p>Please log in to manage your library needs.</p>
+                    <p>Please log in to manage your library needs or create an account.</p>
+                    
+                    <!-- Formulário de Criar Conta -->
+                    <form id="signup-form">
+                        <h3>Create an Account</h3>
+                        <label for="signup-username">Username:</label>
+                        <input type="text" id="signup-username" name="signup-username" required>
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" name="signup-password" required>
+                        <button type="submit">Create Account</button>
+                    </form>
+                    
+                    <!-- Formulário de Login -->
                     <form id="login-form">
+                        <h3>Log In</h3>
                         <label for="username">Username:</label>
                         <input type="text" id="username" name="username" required>
                         <label for="password">Password:</label>
@@ -27,6 +40,7 @@
                 </div>
             </div>
         </section>
+        
 
         <section id="search-page">
             <div class="search-container">
